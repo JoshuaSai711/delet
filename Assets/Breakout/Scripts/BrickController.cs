@@ -29,6 +29,6 @@ public class BrickController : MonoBehaviour
     private void OnDestroy()
     {
         //Remove me from the list of existing bricks
-        BreakoutManager.Me.AllBricks.Remove(this);
+        BreakoutManager.Me.AllBricks.Remove(this);  
     }
 }
