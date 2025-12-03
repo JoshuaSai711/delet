@@ -48,10 +48,10 @@ public class BreakoutManager : MonoBehaviour
         Instantiate(BrickPrefab, new Vector3(1, 1.7f, 2f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(2, 1.7f, 0f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(1, 0.1f, 1f), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(1, 0.7f, 8f), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(2, 0.8f, 5f), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(0, 0.5f, 7f), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(3, 0.2f, 2f), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(1, 0.7f, 1.2f), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(2, 0.8f, 0.5f), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(0, 0.5f, 0.7f), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(3, 0.2f, 0.5f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(0, 0.4f, 1f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(0, 1.3f, 1.2f), Quaternion.identity);
     }
