@@ -59,7 +59,7 @@ public class BreakoutManager : MonoBehaviour
         Instantiate(BrickPrefab, new Vector3(Random.Range(-7f, 7f), 0), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(Random.Range(-1f, 1f), 0), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(Random.Range(-0f, 1f), 0), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(Random.Range(-1f, 0f), 0), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(Random.Range(-1f, 0f), 1), Quaternion.identity);
     }
 
     void Update()
@@ -68,7 +68,7 @@ public class BreakoutManager : MonoBehaviour
         if (AllBricks.Count == 0)
         {
             //If so, win
-            SceneManager.LoadScene("67");
+            SceneManager.LoadScene("You Win");
         }
     }
 }

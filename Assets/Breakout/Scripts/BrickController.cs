@@ -15,6 +15,7 @@ public class BrickController : MonoBehaviour
         BreakoutManager.Me.AllBricks.Add(this);
         //Make yourself a random color
         SR.color = new Color(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
+        SR.color = new Color(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
     }
 
     //This code makes the brick break

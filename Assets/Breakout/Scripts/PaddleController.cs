@@ -12,21 +12,21 @@ public class PaddleController : MonoBehaviour
         //Calculate what my position should be
         //I don't use a rigidbody because this isn't physics movement
         //The only thing in this game with a RB is the ball
-        Vector3 pos = transform.position;
+        Vector3 position = transform.position;
         
         //If I hit left, go left
         if (Input.GetKey(KeyCode.LeftArrow))
-            pos += new Vector3(-Speed * Time.deltaTime, 0, 0);
+            position += new Vector3(-Speed * Time.deltaTime, 0, 0);
         //If I hit right, go right
         else if (Input.GetKey(KeyCode.RightArrow))
-            pos += new Vector3(Speed * Time.deltaTime, 0, 0);
+            position += new Vector3(Speed * Time.deltaTime, 0, 0);
         
         //If I go off the edges of the screen, don't
-        if (pos.x > ScreenBounds || pos.x < -ScreenBounds)
-            pos.x = Mathf.Clamp(pos.x, -ScreenBounds, ScreenBounds);
+        if (position.x > ScreenBounds || position.x < -ScreenBounds);
+            position.x = Mathf.Clamp(position.x, -ScreenBounds, ScreenBounds);
         
         //Plug in the position I calculated to my transform
-        transform.position = pos;
+        transform.position = position;
 
     }
 
