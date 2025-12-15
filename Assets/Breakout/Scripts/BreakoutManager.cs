@@ -26,15 +26,15 @@ public class BreakoutManager : MonoBehaviour
 
         //This is the code for spawning bricks. It's not very good.
         //How could we make this spawn lots of bricks more efficiently?
-        Instantiate(BrickPrefab, new Vector3(Random.Range(-8f, 8f), 0), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(Random.Range(-1f, 1f), 0), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(1, 1.5f, 0), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(2, 1.1f, 0f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(1, 1.3f, 1.3f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(2, 1.7f, 1.1f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(1, 1.2f, 1.0f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(1, 1.34f, 0.7f), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(1, 1.6f, 3f), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(2, 1.1f, 2f), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(1, 1.6f, 1f), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(2, 1.1f, 1f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(1, 1f, 2f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(1, 0.9f, 0.5f), Quaternion.identity);
         //Instantiate(BrickPrefab, new Vector3(1, 1.07f,1f), Quaternion.identity);
@@ -56,7 +56,7 @@ public class BreakoutManager : MonoBehaviour
         Instantiate(BrickPrefab, new Vector3(0, 1.3f, 1.2f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(0, 1.3f, 1.2f), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(0, 1.3f, 1.2f), Quaternion.identity);
-        Instantiate(BrickPrefab, new Vector3(Random.Range(-7f, 7f), 0), Quaternion.identity);
+        Instantiate(BrickPrefab, new Vector3(Random.Range(-1f, 1.1f), 0), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(Random.Range(-1f, 1f), 0), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(Random.Range(-0f, 1f), 0), Quaternion.identity);
         Instantiate(BrickPrefab, new Vector3(Random.Range(-1f, 0f), 1), Quaternion.identity);
@@ -66,7 +66,7 @@ public class BreakoutManager : MonoBehaviour
     {
         //Check to see if all the bricks have been broken
         if (AllBricks.Count == 0)
-        {
+            {
             //If so, win
             SceneManager.LoadScene("You Win");
         }
